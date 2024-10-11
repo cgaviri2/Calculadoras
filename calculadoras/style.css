@@ -1,0 +1,76 @@
+body {
+    background-image: url('https://img.freepik.com/fotos-premium/jaguar-esta-sentado-sobre-fondo-blanco_879145-1659.jpg?w=1060');
+    background-size: cover;
+    background-position: center;
+        
+   }
+.calculadora {
+    width: 300px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+	color: #131212;
+	text-align: center;
+}
+
+#pantalla {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.botones {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.calcuDistancia{
+    display: flex;
+    justify-content: space-around;
+    /*align-items: center;
+    height: 40vh; /* Altura de la ventana gráfica */
+    text-align: center;
+    
+
+}
+
+.botonDistancia {
+   
+    border: none;
+    color: rgb(27, 27, 27);
+    padding: 12px 20px;
+    text-align: center;
+  
+    transition-duration: 10s;
+    justify-content: space-around;
+  
+}
+.container {
+    
+    /* background-color: white;
+     padding: 20px;
+     border-radius: 8px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+     text-align: center;
+ }
+
+label {
+    font-weight: bold;
+}
+input {
+    padding: 8px;
+    border: 1px solid #131212;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Ajusta el valor según necesites */
+}

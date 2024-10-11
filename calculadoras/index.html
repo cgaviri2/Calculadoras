@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div class="calculadora">
+        <input type="text" id="pantalla" readonly>
+        <div class="botones">
+            <button onclick="agregarNumero('7')">7</button>
+            <button onclick="agregarNumero('8')">8</button>
+            <button onclick="agregarNumero('9')">9</button>
+            <button onclick="agregarOperador('/')">/</button>
+            <button onclick="agregarNumero('4')">4</button>
+            <button onclick="agregarNumero('5')">5</button>
+            <button onclick="agregarNumero('6')">6</button>
+            <button onclick="agregarOperador('*')">*</button>
+            <button onclick="agregarNumero('1')">1</button>
+            <button onclick="agregarNumero('2')">2</button>
+            <button onclick="agregarNumero('3')">3</button>
+            <button onclick="agregarOperador('-')">-</button>
+            <button onclick="agregarNumero('0')">0</button>
+            <button onclick="agregarNumero('.')">.</button>
+            <button onclick="calcularResultados()">=</button>
+            <button onclick="agregarOperador('+')">+</button>
+        </div>
+    </div>
+    <h1>Calcula la Distancia</h1>
+    <div class="calcuDistancia" >
+        <form>
+            <label for="x1">X1:</label>
+            <input type="number" id="x1" required>
+            <label for="y1">Y1:</label>
+            <input type="number" id="y1" required>
+   </div>
+        </form>
+       
+        <div class="botonDistancia">
+            <button onclick="calcularDistancia()">Calcular Distancia</button>
+            <p>Distancia: <span id="distancia"></span></p>
+
+        </div>
+	</div>
+
+    <div class="container">
+        <h1>Calculadora de Raíces de un Polinomio de Grado 4</h1>
+        <p>Introduce los coeficientes del polinomio y el intervalo:</p>
+        <form id="polynomialForm">
+            <label for="a">Coeficiente de x^4:</label>
+            <input type="number" id="a" name="a" required><br>
+            <label for="b">Coeficiente de x^3:</label>
+            <input type="number" id="b" name="b" required><br>
+            <label for="c">Coeficiente de x^2:</label>
+            <input type="number" id="c" name="c" required><br>
+            <label for="d">Coeficiente de x:</label>
+            <input type="number" id="d" name="d" required><br>
+            <label for="e">Constante:</label>
+            <input type="number" id="e" name="e" required><br>
+            <label for="intervalA">Intervalo A:</label>
+            <input type="number" id="intervalA" name="intervalA" required><br>
+            <label for="intervalB">Intervalo B:</label>
+            <input type="number" id="intervalB" name="intervalB" required><br>
+            <label for="tolerance">Tolerancia:</label>
+            <input type="number" id="tolerance" name="tolerance" step="0.00001" required><br>
+            <button type="button" onclick="calculateRoot()">Calcular Raíz</button>
+        </form>
+        <p id="result"></p>  
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
